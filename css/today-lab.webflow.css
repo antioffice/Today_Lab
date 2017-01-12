@@ -42,7 +42,7 @@
 }
 
 .text.bold {
-  font-family: 'Aktivgrotesk bold', sans-serif;
+  font-family: 'Aktivgrotesk bold';
   font-size: 18px;
 }
 
@@ -137,7 +137,7 @@
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  height: 80vh;
+  padding-top: 0px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -324,6 +324,10 @@
   margin-bottom: 15px;
 }
 
+.textbigger.temp {
+  font-size: 33px;
+}
+
 .solutionspreview {
   width: 100vw;
   max-width: 1280px;
@@ -362,6 +366,10 @@
   padding-right: 20px;
   padding-left: 20px;
   color: #000;
+}
+
+.column20.ex {
+  padding-right: 0px;
 }
 
 .writings {
@@ -478,6 +486,10 @@
 
 .link:hover {
   text-decoration: underline;
+}
+
+.link.temp {
+  font-size: 33px;
 }
 
 .link2 {
@@ -628,7 +640,7 @@
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  font-family: 'Aktivgrotesk bold', sans-serif;
+  font-family: 'Aktivgrotesk bold';
   color: #000;
   font-size: 20px;
 }
@@ -800,8 +812,9 @@
 }
 
 .slider50 {
+  position: static;
   display: block;
-  height: 500px;
+  height: auto;
   background-color: transparent;
 }
 
@@ -814,20 +827,14 @@
 }
 
 .slide1.concept {
+  position: static;
   display: inline-block;
-  background-image: url('../images/time-1-5.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
-  background-image: url('../images/time-1-5.gif'), linear-gradient(180deg, #171717, #171717);
-  background-position: 40% 56%, 0px 0px;
-  background-size: 90%, auto;
-  background-repeat: no-repeat, repeat;
+  height: auto;
+  background-image: none;
 }
 
 .slide1.result {
-  background-image: url('../images/section-c.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
-  background-image: url('../images/section-c.gif'), linear-gradient(180deg, #171717, #171717);
-  background-position: 50% 50%, 0px 0px;
-  background-size: 90%, auto;
-  background-repeat: no-repeat, repeat;
+  background-image: none;
 }
 
 .slide2 {
@@ -839,19 +846,11 @@
 }
 
 .slide2.concept {
-  background-image: url('../images/time2-2.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
-  background-image: url('../images/time2-2.gif'), linear-gradient(180deg, #171717, #171717);
-  background-position: 40% 50%, 0px 0px;
-  background-size: 90%, auto;
-  background-repeat: no-repeat, repeat;
+  background-image: none;
 }
 
 .slide2.result {
-  background-image: url('../images/timescraper2.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
-  background-image: url('../images/timescraper2.gif'), linear-gradient(180deg, #171717, #171717);
-  background-position: 50% 50%, 0px 0px;
-  background-size: 90%, auto;
-  background-repeat: no-repeat, repeat;
+  background-image: none;
 }
 
 .slide3 {
@@ -863,19 +862,11 @@
 }
 
 .slide3.concept {
-  background-image: url('../images/cycle-3.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
-  background-image: url('../images/cycle-3.gif'), linear-gradient(180deg, #171717, #171717);
-  background-position: 50% 50%, 0px 0px;
-  background-size: 90%, auto;
-  background-repeat: no-repeat, repeat;
+  background-image: none;
 }
 
 .slide3.result {
-  background-image: url('../images/sercion_dollars2.png'), -webkit-linear-gradient(270deg, #171717, #171717);
-  background-image: url('../images/sercion_dollars2.png'), linear-gradient(180deg, #171717, #171717);
-  background-position: 50% 50%, 0px 0px;
-  background-size: 90%, auto;
-  background-repeat: no-repeat, repeat;
+  background-image: none;
 }
 
 .slide4 {
@@ -888,19 +879,11 @@
 }
 
 .slide4.concept {
-  background-image: url('../images/cycle-round.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
-  background-image: url('../images/cycle-round.gif'), linear-gradient(180deg, #171717, #171717);
-  background-position: 50% 50%, 0px 0px;
-  background-size: 90%, auto;
-  background-repeat: no-repeat, repeat;
+  background-image: none;
 }
 
 .slide4.result {
-  background-image: url('../images/looking_for_ideas.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
-  background-image: url('../images/looking_for_ideas.gif'), linear-gradient(180deg, #171717, #171717);
-  background-position: 50% 50%, 0px 0px;
-  background-size: contain, auto;
-  background-repeat: no-repeat, repeat;
+  background-image: none;
 }
 
 .slide4.cowo {
@@ -923,8 +906,13 @@
 }
 
 .slidermask {
-  position: relative;
+  position: static;
   overflow: visible;
+  height: auto;
+}
+
+.slidermask.nodescription {
+  height: 500px;
 }
 
 .leftarrow {
@@ -935,13 +923,14 @@
   width: 25vw;
   margin-right: -50px;
   padding-right: 0px;
+  cursor: w-resize;
 }
 
 .rightrarrow {
   left: 0px;
   display: block;
   width: 75vw;
-  cursor: -webkit-grab;
+  cursor: e-resize;
 }
 
 .rightrarrow:active {
@@ -950,7 +939,8 @@
 }
 
 .navigation {
-  display: none;
+  bottom: 20px;
+  display: block;
 }
 
 .prev-slide {
@@ -993,7 +983,7 @@
 .introdiagram {
   position: relative;
   z-index: 0;
-  height: 60vh;
+  height: 65vh;
   margin-bottom: 0px;
   background-color: transparent;
   color: #000;
@@ -1005,7 +995,7 @@
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  font-family: 'Aktivgrotesk regular', sans-serif;
+  font-family: 'Aktivgrotesk light', sans-serif;
   color: #fff;
   font-size: 10px;
   line-height: 1.2;
@@ -1017,7 +1007,7 @@
 .diagramtitleright {
   margin-right: 20px;
   margin-left: 20px;
-  font-family: 'Aktivgrotesk regular', sans-serif;
+  font-family: 'Aktivgrotesk light', sans-serif;
   color: #fff;
   font-size: 10px;
   line-height: 1.2;
@@ -1078,7 +1068,7 @@
 
 .diagramtextright.number {
   border-bottom: 1px none #000;
-  font-family: 'Aktivgrotesk bold', sans-serif;
+  font-family: 'Aktivgrotesk bold';
   color: #fff;
   font-size: 120px;
   text-shadow: 0 0 0 #000;
@@ -1106,7 +1096,7 @@
 }
 
 .diargramtextleft.number {
-  font-family: 'Aktivgrotesk bold', sans-serif;
+  font-family: 'Aktivgrotesk bold';
   color: #fff;
   font-size: 120px;
   text-shadow: 0 0 0 #000;
@@ -1324,8 +1314,13 @@
 }
 
 .description {
+  height: auto;
+  max-width: 400px;
+  margin-top: 10px;
+  background-color: #fff;
   font-family: 'Aktivgrotesk light', sans-serif;
   font-size: 12px;
+  line-height: 1.2;
 }
 
 .ifram {
@@ -1340,7 +1335,7 @@
   margin-left: 0px;
   padding-right: 20px;
   padding-left: 20px;
-  font-family: 'Larish neue semibold', sans-serif;
+  font-family: 'Larish neue semibold';
   color: #000;
   font-size: 30px;
   line-height: 1.4;
@@ -1354,7 +1349,7 @@
 }
 
 .titlecw {
-  font-family: 'Larish neue semibold', sans-serif;
+  font-family: 'Larish neue semibold';
   color: #000;
   font-size: 30px;
   text-align: center;
@@ -1416,6 +1411,7 @@
   position: static;
   display: block;
   width: 100vw;
+  height: 65vh;
   max-width: 1280px;
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
@@ -1423,13 +1419,12 @@
 }
 
 .punchwrap {
-  position: absolute;
+  position: static;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  height: 80vh;
   padding-top: 30px;
   padding-bottom: 30px;
   -webkit-box-pack: center;
@@ -1543,7 +1538,7 @@
   font-family: Helveticaneue, sans-serif;
   color: #fff;
   font-size: 48px;
-  line-height: 1.2;
+  line-height: 1;
   text-align: right;
 }
 
@@ -1586,6 +1581,76 @@
   text-align: right;
 }
 
+.slidecontent {
+  height: 500px;
+  background-image: -webkit-linear-gradient(270deg, #171717, #171717);
+  background-image: linear-gradient(180deg, #171717, #171717);
+}
+
+.slidecontent.plslide1 {
+  background-image: url('../images/time-1-5.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
+  background-image: url('../images/time-1-5.gif'), linear-gradient(180deg, #171717, #171717);
+  background-position: 40% 55%, 0px 0px;
+  background-size: 700px, auto;
+  background-repeat: no-repeat, repeat;
+}
+
+.slidecontent.plslide2 {
+  background-image: url('../images/time2-2.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
+  background-image: url('../images/time2-2.gif'), linear-gradient(180deg, #171717, #171717);
+  background-position: 40% 40%, 0px 0px;
+  background-size: 700px, auto;
+  background-repeat: no-repeat, repeat;
+}
+
+.slidecontent.plslide3 {
+  background-image: url('../images/cycle-3.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
+  background-image: url('../images/cycle-3.gif'), linear-gradient(180deg, #171717, #171717);
+  background-position: 50% 50%, 0px 0px;
+  background-size: 700px, auto;
+  background-repeat: no-repeat, repeat;
+}
+
+.slidecontent.plslide4 {
+  background-image: url('../images/cycle-round.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
+  background-image: url('../images/cycle-round.gif'), linear-gradient(180deg, #171717, #171717);
+  background-position: 50% 50%, 0px 0px;
+  background-size: 700px, auto;
+  background-repeat: no-repeat, repeat;
+}
+
+.slidecontent.plslide5 {
+  background-image: url('../images/section-c.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
+  background-image: url('../images/section-c.gif'), linear-gradient(180deg, #171717, #171717);
+  background-position: 50% 50%, 0px 0px;
+  background-size: 700px, auto;
+  background-repeat: no-repeat, repeat;
+}
+
+.slidecontent.plslide6 {
+  background-image: url('../images/timescraper2.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
+  background-image: url('../images/timescraper2.gif'), linear-gradient(180deg, #171717, #171717);
+  background-position: 50% 50%, 0px 0px;
+  background-size: 700px, auto;
+  background-repeat: no-repeat, repeat;
+}
+
+.slidecontent.plslide7 {
+  background-image: url('../images/sercion_dollars2.png'), -webkit-linear-gradient(270deg, #171717, #171717);
+  background-image: url('../images/sercion_dollars2.png'), linear-gradient(180deg, #171717, #171717);
+  background-position: 50% 50%, 0px 0px;
+  background-size: 700px, auto;
+  background-repeat: no-repeat, repeat;
+}
+
+.slidecontent.plslide8 {
+  background-image: url('../images/looking_for_ideas.gif'), -webkit-linear-gradient(270deg, #171717, #171717);
+  background-image: url('../images/looking_for_ideas.gif'), linear-gradient(180deg, #171717, #171717);
+  background-position: 50% 50%, 0px 0px;
+  background-size: contain, auto;
+  background-repeat: no-repeat, repeat;
+}
+
 html.w-mod-js *[data-ix="slide-from-top"] {
   -webkit-transform: translate(0px, -100px);
   -ms-transform: translate(0px, -100px);
@@ -1601,9 +1666,6 @@ html.w-mod-js *[data-ix="logo-bottom"] {
 }
 
 @media (max-width: 991px) {
-  .cover {
-    height: 70vh;
-  }
   .aboutpreview {
     padding-top: 80px;
     padding-bottom: 40px;
@@ -1665,6 +1727,9 @@ html.w-mod-js *[data-ix="logo-bottom"] {
     font-size: 11px;
   }
   .link {
+    font-size: 28px;
+  }
+  .link.temp {
     font-size: 28px;
   }
   .buttonlink {
@@ -1729,6 +1794,50 @@ html.w-mod-js *[data-ix="logo-bottom"] {
     padding-right: 10px;
     padding-left: 10px;
   }
+  .slidermask.nodescription {
+    height: 400px;
+  }
+  .diagramtextright {
+    font-size: 45px;
+  }
+  .diargramtextleft {
+    font-size: 45px;
+  }
+  .punchright1 {
+    display: none;
+    font-size: 45px;
+  }
+  .punchleft1 {
+    display: none;
+    font-size: 45px;
+  }
+  .slidecontent.plslide1 {
+    height: 460px;
+    background-image: url('../images/time-1-5.gif'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/time-1-5.gif'), linear-gradient(180deg, null, null);
+    background-size: 700px, auto;
+  }
+  .slidecontent.plslide2 {
+    height: 460px;
+  }
+  .slidecontent.plslide3 {
+    height: 460px;
+  }
+  .slidecontent.plslide4 {
+    height: 460px;
+  }
+  .slidecontent.plslide5 {
+    height: 460px;
+  }
+  .slidecontent.plslide6 {
+    height: 460px;
+  }
+  .slidecontent.plslide7 {
+    height: 460px;
+  }
+  .slidecontent.plslide8 {
+    height: 460px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1737,6 +1846,9 @@ html.w-mod-js *[data-ix="logo-bottom"] {
   }
   .logo.bottom {
     padding-left: 10px;
+  }
+  .cover {
+    height: auto;
   }
   .aboutpreview {
     padding: 70px 10px 35px;
@@ -1797,6 +1909,9 @@ html.w-mod-js *[data-ix="logo-bottom"] {
     margin-top: 10px;
     margin-bottom: 25px;
   }
+  .link.temp {
+    font-size: 28px;
+  }
   .buttonlink {
     padding: 20px;
     float: none;
@@ -1811,10 +1926,14 @@ html.w-mod-js *[data-ix="logo-bottom"] {
     padding-top: 90px;
     padding-bottom: 0px;
   }
+  .about.first.black {
+    padding-top: 30px;
+  }
   .textnormal {
     margin-top: 10px;
     margin-bottom: 30px;
     padding-left: 10px;
+    font-size: 14px;
   }
   .textnormal.headerless {
     margin-top: 10px;
@@ -1861,6 +1980,86 @@ html.w-mod-js *[data-ix="logo-bottom"] {
   .zerocolumn {
     height: 1px;
   }
+  .introdiagram {
+    position: relative;
+  }
+  .diagramtextright {
+    max-width: 250px;
+    font-size: 35px;
+  }
+  .diargramtextleft {
+    max-width: 250px;
+    font-size: 35px;
+  }
+  .point {
+    font-size: 14px;
+  }
+  .checkbox {
+    font-size: 14px;
+  }
+  .description {
+    margin-left: 10px;
+  }
+  .punch {
+    height: 65vh;
+  }
+  .punchwrap {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .punchright1 {
+    display: none;
+    font-size: 35px;
+  }
+  .punchleft1 {
+    display: none;
+    font-size: 35px;
+  }
+  .slidecontent.plslide1 {
+    height: 350px;
+    background-image: url('../images/time-1-5.gif'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/time-1-5.gif'), linear-gradient(180deg, null, null);
+    background-size: 500px, auto;
+  }
+  .slidecontent.plslide2 {
+    height: 350px;
+    background-image: url('../images/time2-2.gif'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/time2-2.gif'), linear-gradient(180deg, null, null);
+    background-size: 500px, auto;
+  }
+  .slidecontent.plslide3 {
+    height: 350px;
+    background-image: url('../images/cycle-3.gif'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/cycle-3.gif'), linear-gradient(180deg, null, null);
+    background-size: 500px, auto;
+  }
+  .slidecontent.plslide4 {
+    height: 350px;
+    background-image: url('../images/cycle-round.gif'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/cycle-round.gif'), linear-gradient(180deg, null, null);
+    background-size: 500px, auto;
+  }
+  .slidecontent.plslide5 {
+    height: 350px;
+    background-image: url('../images/section-c.gif'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/section-c.gif'), linear-gradient(180deg, null, null);
+    background-size: 500px, auto;
+  }
+  .slidecontent.plslide6 {
+    height: 350px;
+    background-image: url('../images/timescraper2.gif'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/timescraper2.gif'), linear-gradient(180deg, null, null);
+    background-size: 500px, auto;
+  }
+  .slidecontent.plslide7 {
+    height: 350px;
+    background-image: url('../images/sercion_dollars2.png'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/sercion_dollars2.png'), linear-gradient(180deg, null, null);
+    background-size: 500px, auto;
+  }
+  .slidecontent.plslide8 {
+    height: 350px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -1876,6 +2075,31 @@ html.w-mod-js *[data-ix="logo-bottom"] {
     padding-top: 25px;
     padding-bottom: 25px;
   }
+  .columnlean.blackline.dg {
+    height: 50%;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    border-left-style: none;
+  }
+  .columnlean.dg.left {
+    height: 50%;
+    padding-top: 20px;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    border-top: 1px solid #fff;
+  }
+  .columnlean.punchright {
+    height: 50%;
+    border-style: solid none none;
+    border-color: #fff #000 #000;
+    border-top-width: 1px;
+  }
+  .columnlean.punchleft {
+    height: 50%;
+    border-top: 1px solid #fff;
+  }
   .textplain.notabutton {
     margin-bottom: 10px;
   }
@@ -1889,6 +2113,9 @@ html.w-mod-js *[data-ix="logo-bottom"] {
   .solutionshortdescription {
     padding-bottom: 25px;
     font-size: 12px;
+  }
+  .column20.ex {
+    line-height: 1.2;
   }
   .footerlinks {
     padding-top: 10px;
@@ -1906,6 +2133,10 @@ html.w-mod-js *[data-ix="logo-bottom"] {
   .link {
     font-size: 25px;
   }
+  .link.temp {
+    font-size: 25px;
+    line-height: 1.2;
+  }
   .link2 {
     font-size: 12px;
   }
@@ -1914,6 +2145,9 @@ html.w-mod-js *[data-ix="logo-bottom"] {
   }
   .about {
     padding-bottom: 0px;
+  }
+  .about.first.black {
+    padding-top: 90px;
   }
   .textnormal {
     font-size: 14px;
@@ -1937,29 +2171,94 @@ html.w-mod-js *[data-ix="logo-bottom"] {
   .solutionname {
     font-size: 12px;
   }
+  .slidermask.nodescription {
+    height: 200px;
+  }
+  .diagramtitleleft {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+  .maxedcontainer.left {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .diagramtextright {
+    font-size: 33px;
+  }
+  .diargramtextleft {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    font-size: 33px;
+  }
+  .punchwrap {
+    padding-top: 90px;
+    padding-bottom: 0px;
+  }
+  .verticaldivider {
+    display: none;
+  }
+  .punchright1 {
+    display: none;
+    font-size: 33px;
+  }
+  .punchleft1 {
+    display: none;
+    font-size: 33px;
+  }
+  .slidecontent.plslide1 {
+    height: 200px;
+    background-image: url('../images/time-1-5.gif'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/time-1-5.gif'), linear-gradient(180deg, null, null);
+    background-size: 280px, auto;
+  }
+  .slidecontent.plslide2 {
+    height: 200px;
+    background-image: url('../images/time2-2.gif'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/time2-2.gif'), linear-gradient(180deg, null, null);
+    background-size: 280px, auto;
+  }
+  .slidecontent.plslide3 {
+    height: 200px;
+    background-image: url('../images/cycle-3.gif'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/cycle-3.gif'), linear-gradient(180deg, null, null);
+    background-size: 280px, auto;
+  }
+  .slidecontent.plslide4 {
+    height: 200px;
+    background-image: url('../images/cycle-round.gif'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/cycle-round.gif'), linear-gradient(180deg, null, null);
+    background-size: 280px, auto;
+  }
+  .slidecontent.plslide5 {
+    height: 200px;
+    background-image: url('../images/section-c.gif'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/section-c.gif'), linear-gradient(180deg, null, null);
+    background-size: 280px, auto;
+  }
+  .slidecontent.plslide6 {
+    height: 200px;
+    background-image: url('../images/timescraper2.gif'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/timescraper2.gif'), linear-gradient(180deg, null, null);
+    background-size: 280px, auto;
+  }
+  .slidecontent.plslide7 {
+    height: 200px;
+    background-image: url('../images/sercion_dollars2.png'), -webkit-linear-gradient(270deg, null, null);
+    background-image: url('../images/sercion_dollars2.png'), linear-gradient(180deg, null, null);
+    background-size: 280px, auto;
+  }
+  .slidecontent.plslide8 {
+    height: 200px;
+  }
 }
 
 @font-face {
-  font-family: 'Aktivgrotesk bold';
-  src: url('../fonts/AktivGrotesk-Bold.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
   font-family: 'Aktivgrotesk light';
   src: url('../fonts/AktivGrotesk-Light.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Aktivgrotesk';
-  src: url('../fonts/AktivGrotesk-MediumItalic.otf') format('opentype'), url('../fonts/AktivGrotesk-Italic.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Aktivgrotesk regular';
-  src: url('../fonts/AktivGrotesk-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
@@ -1972,18 +2271,6 @@ html.w-mod-js *[data-ix="logo-bottom"] {
 @font-face {
   font-family: 'Helveticaneue';
   src: url('../fonts/HelveticaNeue-UltraLight.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Larish neue semibold';
-  src: url('../fonts/larish_neue_semibold.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Apercu regular pro';
-  src: url('../fonts/apercu_regular_pro.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
