@@ -676,6 +676,14 @@
   line-height: 1.2;
 }
 
+.solutionname.column20 {
+  font-size: 24px;
+}
+
+.solutionname.column20.main {
+  max-width: 580px;
+}
+
 .fourcolumns {
   width: 100vw;
   max-width: 1280px;
@@ -1871,6 +1879,9 @@ html.w-mod-js *[data-ix="logo-bottom"] {
     color: #000;
     font-size: 18px;
   }
+  .solutionname.column20.main {
+    font-size: 18px;
+  }
   .withimage {
     padding-right: 10px;
     padding-left: 10px;
@@ -2250,6 +2261,9 @@ html.w-mod-js *[data-ix="logo-bottom"] {
     width: 90%;
   }
   .solutionname {
+    font-size: 12px;
+  }
+  .solutionname.column20.main {
     font-size: 12px;
   }
   .slidermask.nodescription {
