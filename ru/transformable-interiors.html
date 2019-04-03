@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Wed Apr 03 2019 09:13:41 GMT+0000 (UTC)  -->
+<!--  Last Published: Wed Apr 03 2019 19:30:06 GMT+0000 (UTC)  -->
 <html data-wf-page="587936aacf63987b41997b31" data-wf-site="585a2b9d115cabfc670771c5">
 <head>
   <meta charset="utf-8">
@@ -55,12 +55,16 @@ $(document).keydown(function(e) {
 </script>
 </head>
 <body>
-  <div class="section white">
-    <div class="air">
-      <div class="header"><a href="/ru/" class="logo-block w-inline-block"><img src="../images/Today_logo-04.svg" alt="" class="logo"></a>
-        <div data-ix="logo-top" class="logotrigger"></div>
+  <div data-collapse="medium" data-animation="default" data-duration="400" class="black-navbar wht w-nav">
+    <div class="logotrigger" data-ix="logo-top"></div>
+    <div class="fixed-nav w-container"><a href="../ru.html" class="w-nav-brand"><img src="../images/Today_logo-04.svg" alt="" class="logo"></a>
+      <nav role="navigation" class="nav-menu w-nav-menu"><a href="../ru/projects.html" class="nav-link wht w-nav-link">Проекты</a><a href="../ru/solutions.html" class="nav-link wht w-nav-link">Решения</a><a href="../ru/about.html" class="nav-link wht w-nav-link">О нас</a><a href="../ru/contact.html" class="nav-link wht w-nav-link">Контакты</a></nav>
+      <div class="menu-button w-nav-button">
+        <div class="icon w-icon-nav-menu"></div>
       </div>
     </div>
+  </div>
+  <div class="section white">
     <div class="about first black">
       <div class="introdiagram w-row">
         <div class="columnlean dg left w-col w-col-6 w-col-small-6">
@@ -158,20 +162,7 @@ $(document).keydown(function(e) {
           <div class="dividerwspaces"></div>
           <div class="textnormal">Для расчета цены и условий, свяжитесь с нами, заполнив форму ниже:<a href="#" class="link2"></a></div>
           <div class="w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" class="solutionform">
-              <div class="textnormal inbody">Меня интересует:<a href="#" class="link2"></a></div>
-              <div class="checkboxes w-row">
-                <div class="w-col w-col-6">
-                  <div class="checkbox w-checkbox"><input type="checkbox" id="hybrid-office" name="hybrid-office" data-name="hybrid office" class="w-checkbox-input"><label for="hybrid-office" class="w-form-label">Бизнес центр 2.0</label></div>
-                  <div class="checkbox w-checkbox"><input type="checkbox" id="indoor-analytics" name="indoor-analytics" data-name="indoor analytics" class="w-checkbox-input"><label for="indoor-analytics" class="w-form-label">Пространственная аналитика</label></div>
-                  <div class="checkbox w-checkbox"><input type="checkbox" id="transformable-interiors" name="transformable-interiors" data-name="transformable interiors" checked="" class="w-checkbox-input"><label for="transformable-interiors" class="w-form-label">Трансформируемые интерьеры</label></div>
-                </div>
-                <div class="w-col w-col-6">
-                  <div class="checkbox w-checkbox"><input type="checkbox" id="coworking" name="coworking" data-name="coworking" class="w-checkbox-input"><label for="coworking" class="w-form-label">Коворкинг под ключ</label></div>
-                  <div class="checkbox w-checkbox"><input type="checkbox" id="omnichannel-analytics" name="omnichannel-analytics" data-name="omnichannel analytics" class="w-checkbox-input"><label for="omnichannel-analytics" class="w-form-label">Аналитика маркетинга и продаж</label></div>
-                  <div class="checkbox w-checkbox"><input type="checkbox" id="chatbots" name="chatbots" data-name="chatbots" class="w-checkbox-input"><label for="chatbots" class="w-form-label">Чатботы для работы с клиентами</label></div>
-                </div>
-              </div><input type="text" id="Name" name="Name" data-name="Name" placeholder="Ваше имя" maxlength="256" class="field w-input"><input type="text" id="Phone" name="Phone" data-name="Phone" placeholder="Ваш телефон" maxlength="256" class="field w-input"><input type="email" id="email" name="email" data-name="Email" placeholder="Ваш email" maxlength="256" required="" class="field w-input"><input type="submit" value="Отправить" data-wait="Please wait..." class="contactbutton w-button"></form>
+            <form id="email-form" name="email-form" data-name="Email Form" class="solutionform"><input type="text" id="Name" name="Name" data-name="Name" placeholder="Ваше имя" maxlength="256" class="field w-input"><input type="text" id="Phone" name="Phone" data-name="Phone" placeholder="Ваш телефон" maxlength="256" class="field w-input"><input type="email" id="email" name="email" data-name="Email" placeholder="Ваш email" maxlength="256" required="" class="field w-input"><input type="submit" value="Отправить" data-wait="Please wait..." class="contactbutton w-button"></form>
             <div class="success w-form-done">
               <div>Спасибо! Мы с вами скоро свяжемся!</div>
             </div>
@@ -192,13 +183,13 @@ $(document).keydown(function(e) {
       </div>
       <div class="solutionspreview w-row">
         <div class="columnlean w-col w-col-3 w-col-small-6">
-          <div class="categoryname"><a href="/solutions/" class="link2">Категория 1</a></div><a href="/indoor-analytics" data-ix="hover50" class="linkblock opacity w-inline-block"><img src="../images/indoor-20.png" srcset="../images/indoor-20-p-500x501.png 500w, ../images/indoor-20-p-800x800.png 800w, ../images/indoor-20.png 1333w" sizes="(max-width: 479px) 189.5px, (max-width: 767px) 203.625px, (max-width: 991px) 24vw, 217.75px" alt="" class="solutionsicon"><div class="solutionshortdescription">Пространственная аналитика</div></a></div>
+          <div class="categoryname"><a href="/solutions/" class="link2">Категория 1</a></div><a href="/indoor-analytics" data-ix="hover50" class="linkblock opacity w-inline-block"><img src="../images/indoor-20.png" srcset="../images/indoor-20-p-500x501.png 500w, ../images/indoor-20-p-800x800.png 800w, ../images/indoor-20.png 1333w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 47vw, (max-width: 991px) 24vw, 25vw" alt="" class="solutionsicon"><div class="solutionshortdescription">Пространственная аналитика</div></a></div>
         <div class="columnlean w-col w-col-3 w-col-small-6">
           <div class="categoryname"><a href="/solutions/" class="link2">Категория 2</a></div><a href="/multichannel" data-ix="hover50" class="linkblock opacity w-inline-block"><img src="../images/marketing-22.png" alt="" class="solutionsicon"><div class="solutionshortdescription">Сквозная аналитика маркетинга и продаж</div></a></div>
         <div class="columnlean w-col w-col-3 w-col-small-6">
-          <div class="categoryname"><a href="/solutions/" class="link2">Категория 3</a></div><a href="/coworking" data-ix="hover50" class="linkblock opacity w-inline-block"><img src="../images/coworking_square-38.png" srcset="../images/coworking_square-38-p-500x501.png 500w, ../images/coworking_square-38-p-800x800.png 800w, ../images/coworking_square-38.png 1333w" sizes="(max-width: 479px) 136.234375px, (max-width: 991px) 145.921875px, 155.609375px" alt="" class="solutionsicon"><div class="solutionshortdescription">Коворкинг под ключ</div></a></div>
+          <div class="categoryname"><a href="/solutions/" class="link2">Категория 3</a></div><a href="/coworking" data-ix="hover50" class="linkblock opacity w-inline-block"><img src="../images/coworking_square-38.png" srcset="../images/coworking_square-38-p-500x501.png 500w, ../images/coworking_square-38-p-800x800.png 800w, ../images/coworking_square-38.png 1333w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 47vw, (max-width: 991px) 24vw, 25vw" alt="" class="solutionsicon"><div class="solutionshortdescription">Коворкинг под ключ</div></a></div>
         <div class="columnlean w-col w-col-3 w-col-small-6">
-          <div class="categoryname"><a href="/solutions/" class="link2">Категория 4</a></div><a href="/serviced-business-center" data-ix="hover50" class="linkblock opacity w-inline-block"><img src="../images/servicedofficesquare-39.png" srcset="../images/servicedofficesquare-39-p-500x501.png 500w, ../images/servicedofficesquare-39-p-800x800.png 800w, ../images/servicedofficesquare-39.png 1333w" sizes="(max-width: 479px) 116.515625px, (max-width: 991px) 124.5625px, 132.609375px" alt="" class="solutionsicon"><div class="solutionshortdescription">Бизнес центр 2.0</div></a></div>
+          <div class="categoryname"><a href="/solutions/" class="link2">Категория 4</a></div><a href="/serviced-business-center" data-ix="hover50" class="linkblock opacity w-inline-block"><img src="../images/servicedofficesquare-39.png" srcset="../images/servicedofficesquare-39-p-500x501.png 500w, ../images/servicedofficesquare-39-p-800x800.png 800w, ../images/servicedofficesquare-39.png 1333w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 47vw, (max-width: 991px) 24vw, 25vw" alt="" class="solutionsicon"><div class="solutionshortdescription">Бизнес центр 2.0</div></a></div>
       </div>
       <div class="aboutpreview">
         <div class="w-row">
